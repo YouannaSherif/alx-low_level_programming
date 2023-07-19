@@ -3,7 +3,7 @@
 /**
  * 3-islower -checks for lowercase characters
  *
- * int c: is an integer parameter which we want to know is it a lowercase or otherwise
+ * int c: parameter which we want to know is it a lowercase or otherwise
  * Return: 1 if c is lowercase
  * Otherwise it returns 0
  */
