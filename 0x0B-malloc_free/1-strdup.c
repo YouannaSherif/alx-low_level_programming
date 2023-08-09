@@ -20,14 +20,14 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	if (ptr == NULL)
+	else if (ptr == NULL)
 		return (NULL);
-	if (size == 0)
+	else if (size == 0)
 		return (NULL);
 	else
 	{
 		for (i = 0; i < size; i++)
 			ptr[i] = str[i];
-	}
 		return (ptr);
+	}
 }
