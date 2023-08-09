@@ -20,9 +20,9 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	if (ptr == 0)
+	else if (ptr == NULL)
 		return (NULL);
-	if (size > 0)
+	else if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 			ptr[i] = str[i];
