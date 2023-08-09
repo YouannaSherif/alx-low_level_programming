@@ -22,7 +22,9 @@ char *_strdup(char *str)
 		return (NULL);
 	if (ptr == NULL)
 		return (NULL);
-	if (size > 0)
+	if (size == 0)
+		return (NULL);
+	else
 	{
 		for (i = 0; i < size; i++)
 			ptr[i] = str[i];
@@ -30,6 +32,4 @@ char *_strdup(char *str)
 		ptr[i] = '\0';
 		return (ptr);
 	}
-	else
-		return (NULL);
 }
