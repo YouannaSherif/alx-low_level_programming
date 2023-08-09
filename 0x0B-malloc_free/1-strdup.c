@@ -22,10 +22,12 @@ char *_strdup(char *str)
 		return (NULL);
 	if (ptr == 0)
 		return (NULL);
-	else
+	if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 			ptr[i] = str[i];
 		return (ptr);
 	}
+	else
+		return (NULL);
 }
