@@ -13,7 +13,7 @@
 int sqrt(int n, int var);
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1);
+	return (sqrt(n, 1));
 }
 
 /**
@@ -28,10 +28,10 @@ int _sqrt_recursion(int n)
 
 int sqrt(int n, int var)
 {
-		if(n == var)
+		if (n == var)
 			return (var);
 		if (n < var)
-			return (sqrt(n,var++));
+			return (sqrt(n, var++));
 		else
 			return (-1);
 }
