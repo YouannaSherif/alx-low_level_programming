@@ -29,10 +29,10 @@ int _sqrt_recursion(int n)
 
 int sq(int n, int var)
 {
-		if (n == var)
+		if (var * var == n)
 			return (var);
-		if (n < var)
-			return (sq(n, var++));
+		if (var * var < n)
+			return (sq(n, var + 1));
 		else
 			return (-1);
 }
