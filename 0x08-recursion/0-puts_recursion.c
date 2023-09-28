@@ -8,9 +8,11 @@
 
 void _puts_recursion(char *s)
 {
-	unsigned int i;
-
-	for (i = 0; i < strlen(s); i++)
-		putchar(s[i]);
-	putchar('\n');
+	if (*s)
+	{
+		putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		putchar('\n');
 }
