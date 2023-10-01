@@ -23,13 +23,10 @@ int is_palindrome(char *s)
 
 int pal(char *s, unsigned int x, unsigned int y)
 {
-	if (x < (strlen(s) / 2))
-	{
-		if (s[x] == s[y])
-		{
-			pal(s, x + 1, y - 1);
-			return (1);
-		}
-	}
-		return (0);
+	if (*s && s[x] != s[y])
+	return (0);
+
+	if (x >= y)
+		return (1);
+	return (pal(s, x + 1, y - 1));
 }
