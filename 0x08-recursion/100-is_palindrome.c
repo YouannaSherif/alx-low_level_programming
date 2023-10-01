@@ -9,7 +9,7 @@
 
 int is_palindrome(char *s)
 {
-	return(pal(s, 0, strlen(s) - 1));
+	return (pal(s, 0, strlen(s) - 1));
 }
 
 /**
@@ -23,7 +23,7 @@ int is_palindrome(char *s)
 
 int pal(char *s, unsigned int x, unsigned int y)
 {
-	if (s[x] && *s && x < (strlen(s) / 2))
+	if (x < (strlen(s) / 2))
 	{
 		if (s[x] == s[y])
 		{
@@ -31,5 +31,5 @@ int pal(char *s, unsigned int x, unsigned int y)
 			return (1);
 		}
 	}
-			return (0);
+		return (0);
 }
