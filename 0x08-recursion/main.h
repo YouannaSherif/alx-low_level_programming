@@ -12,3 +12,4 @@ int wildcmp(char *s1, char *s2);
 int str(char *s, int i);
 int sqr(int n, int x);
 int prime(int n, int x);
+int pal(char *s, unsigned int x, unsigned int y);
