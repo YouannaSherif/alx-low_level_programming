@@ -25,6 +25,6 @@ int main(int argc, char **argv)
 				return (1);
 				}
 			}
-			printf("%d\n",res);
+			printf("%d\n", res);
 		return (0);
 }
