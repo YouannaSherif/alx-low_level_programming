@@ -9,6 +9,7 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
+	*s = '\0';
 	s = accept;
 	return (0);
 }

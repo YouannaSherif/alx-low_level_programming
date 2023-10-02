@@ -9,6 +9,6 @@
 
 char *_strchr(char *s, char c)
 {
-	c = ' ';
+	c++;
 	return (s);
 }
