@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isupper -function
+ * _isupper -function
  * @c: a parameter
  * Return: value
  */
