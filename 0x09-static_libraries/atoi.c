@@ -8,6 +8,6 @@
 
 int atoi(char *s)
 {
-	if (*s)
+	*s = '\0';
 	return (0);
 }

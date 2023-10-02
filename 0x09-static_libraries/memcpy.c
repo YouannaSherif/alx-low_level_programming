@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memcpy -function
+ * _memcpy -function
  * @dest: string
  * @src: string
  * @n: a parameter
