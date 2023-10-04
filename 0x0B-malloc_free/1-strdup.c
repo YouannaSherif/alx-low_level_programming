@@ -19,10 +19,9 @@ char *_strdup(char *str)
 
 	if (ptr == 0)
 		return (NULL);
-	else
-	{
+
 		for (i = 0; i < strlen(str); i++)
 			ptr[i] = str[i];
-	}
+
 	return (ptr);
 }
