@@ -14,9 +14,10 @@ char *_strdup(char *str)
 
 	if (str && ptr)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < strlen(str); i++)
 			ptr[i] = str[i];
-		ptr[size] = putchar('\0');
+		i++;
+		ptr[i] = putchar('\0');
 		return (ptr);
 	}
 	return (NULL);
